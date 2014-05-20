@@ -13,7 +13,7 @@ except ImportError:     # Python 2
 from django.contrib.staticfiles import utils
 
 try:
-    from django.core.handlers.base import get_path_info
+    from django.core.handlers.wsgi import get_path_info
 except ImportError:     # django < 1.5
     import sys
     py3 = sys.version_info[0] == 3 
